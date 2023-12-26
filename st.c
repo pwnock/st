@@ -2575,7 +2575,7 @@ check_control_code:
 			tnewline(1);
 		else
 			tmoveto(term.col - width, term.c.y);
-		gp = &term.line[term.c.y][term.c.x];
+		gp = &TLINE(term.c.y)[term.c.x];
 	}
 
 	tsetchar(u, &term.c.attr, term.c.x, term.c.y);
